@@ -20,8 +20,10 @@ function U = Func_U(q)
 
 
 % Constant variable of the system
-M_drone = 1.50;  %Kg , pure drone weight
-mc     = 0.65;  %Kg , pure pendulum weight
+M_drone = 1.50;   %Kg , pure drone weight
+mc     = 0.65;    %Kg , pure pendulum weight
+
+arm_lenght = 0.2; %meter,From the motor's center towards the drone frame's centerline
 
 % Extract values  from q and arrays and assign them to respective variables
 x = q(1);
@@ -48,9 +50,10 @@ S_beta  = sin(beta);
     % Matrix 
     M_force  = [];
 
-tork_phi   = diff(M_force(1),t);
-tork_theta = diff(M_force(2),t);
-tork_psi   = diff(M_force(3),t);
+tork_phi   = ((M_force(2)-M_force(4))*arm_lenght);
+tork_theta = ((M_force(3)-M_force(1))*arm_lenght);
+tork_psi   = (((M_force(1)+M_force(2)+M_force(3)+M_force(4)))*arm_lenght);
+
     % Matrix
     M_tork   = [ tork_phi ;
                 tork_theta;
