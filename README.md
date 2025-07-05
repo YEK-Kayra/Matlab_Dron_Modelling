@@ -13,7 +13,7 @@ This project models and simulates a quadrotor unmanned aerial vehicle carrying a
 
 ## 🛠️ Technical Components
 1. **System Dynamics**  
-        -> 8-DOF nonlinear system (3 positional, 3 rotational for quadrotor + 2 angular for pendulum)   
+                -> 8-DOF nonlinear system (3 positional, 3 rotational for quadrotor + 2 angular for pendulum)   
         -> Derived using Euler-Lagrange formulation:    
 
 M(q)q̈ + C(q,q̇)q̇ + G(q) = Bu
