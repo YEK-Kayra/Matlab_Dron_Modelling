@@ -1,6 +1,9 @@
 
 # Quadrotor with Spherical Inverted Pendulum Modeling and Simulation
 
+## ▶️ Play on YOUTUBE 
+[Watch the working video here](https://youtu.be/V8qL0ynmBks)
+
 ## 📌 Project Overview
 This project models and simulates a quadrotor unmanned aerial vehicle carrying a spherical inverted pendulum system. Developed at Kocaeli University's Mechatronics Engineering Department, the project provides:
 
