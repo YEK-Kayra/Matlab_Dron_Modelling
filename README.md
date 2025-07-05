@@ -3,7 +3,7 @@
 
 ## 📌 Project Overview
 This project models and simulates a quadrotor unmanned aerial vehicle carrying a spherical inverted pendulum system. Developed at Kocaeli University's Mechatronics Engineering Department, the project provides:
-        
+
 -> **Mathematical modeling** of the complex MIMO nonlinear system using Euler-Lagrange     formulation  
 -> **Simulink implementation** of the dynamic equations     
 -> **3D physical modeling** using Simscape Multibody        
@@ -12,12 +12,13 @@ This project models and simulates a quadrotor unmanned aerial vehicle carrying a
 
 
 ## 🛠️ Technical Components
-1. **System Dynamics**
-           -> 8-DOF nonlinear system (3 positional, 3 rotational for quadrotor + 2 angular for pendulum)
-           -> Derived using Euler-Lagrange formulation
-            
-M(q)q̈ + C(q,q̇)q̇ + G(q) = Bu
-        
+1. **System Dynamics** 
+
+        -> 8-DOF nonlinear system (3 positional, 3 rotational for quadrotor + 2 angular for pendulum)
+        -> Derived using Euler-Lagrange formulation:
+    
+                                        M(q)q̈ + C(q,q̇)q̇ + G(q) = Bu
+
         -> Includes Coriolis effects, inertia coupling, and gravitational forces
 
 2. **Implementation Approaches**
